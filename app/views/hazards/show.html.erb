@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hazard.name %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @hazard.image_url %>
+</p>
+
+<p>
+  <b>Risks:</b>
+  <%= @hazard.risks %>
+</p>
+
+<p>
+  <b>Prevention:</b>
+  <%= @hazard.prevention %>
+</p>
+
+<p>
+  <b>Products:</b>
+  <%= @hazard.products %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @hazard.area_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_hazard_path(@hazard) %> |
+<%= link_to 'Back', hazards_path %>

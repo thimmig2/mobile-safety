@@ -1,0 +1,33 @@
+<h1>Listing hazards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Image url</th>
+    <th>Risks</th>
+    <th>Prevention</th>
+    <th>Products</th>
+    <th>Area</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hazards.each do |hazard| %>
+  <tr>
+    <td><%= hazard.name %></td>
+    <td><%= hazard.image_url %></td>
+    <td><%= hazard.risks %></td>
+    <td><%= hazard.prevention %></td>
+    <td><%= hazard.products %></td>
+    <td><%= hazard.area_id %></td>
+    <td><%= link_to 'Show', hazard %></td>
+    <td><%= link_to 'Edit', edit_hazard_path(hazard) %></td>
+    <td><%= link_to 'Destroy', hazard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hazard', new_hazard_path %>

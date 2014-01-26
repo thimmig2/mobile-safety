@@ -1,0 +1,7 @@
+<div class="row">
+	<div id="hazard" class="col-xs-8"></div>
+	
+	<div id="next-hazard" class="col-xs-4">
+		
+	</div>
+</div>
